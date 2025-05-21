@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    border: 1px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rowDiv {
+    flex: auto;
+    display: flex; 
+    
+}
+
+.singleDiv {
+    flex: auto;
+    border: 1px solid black;
+    
+}
+
+button {
+    margin: 20px;
+}
