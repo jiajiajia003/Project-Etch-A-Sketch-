@@ -16,8 +16,15 @@ function createGrid(para) {
     const allDivs = document.querySelectorAll(`.singleDiv`);
     allDivs.forEach((singleDiv) => {
         singleDiv.addEventListener("mouseover", () => {
-            singleDiv.setAttribute(`style`, `background: black;`);
+            singleDiv.setAttribute(`style`, `background: ${randomColor()};`);
     })})
+}
+
+function randomColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    return `rgb(${r}, ${g}, ${b})`;
 }
 
 const container = document.querySelector(`.container`);
